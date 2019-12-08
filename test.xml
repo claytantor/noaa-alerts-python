@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rss version="2.0" 
+    xmlns:blogChannel="http://backend.userland.com/blogChannelModule" 
+    xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#">
+
+    <channel>
+        <title>RDBC1 Sacramento River at Red Bluff Diversion Dam (California)</title>
+        <link>https://water.weather.gov/ahps/</link>
+        <description>Current Hydrologic Alerts for California provided by the National Weather Service - Advanced Hydrologic Prediction Service</description>
+        <language>en-us</language>
+        <copyright>None</copyright>
+        <lastBuildDate>Wed, 04 Dec 2019 04:42:52 +0000</lastBuildDate>
+        <managingEditor>ahps.webmaster@noaa.gov (Webmaster)</managingEditor>
+        <webMaster>ahps.cms@noaa.gov (Webmaster)</webMaster>
+
+        <image>
+            <title>RDBC1 Sacramento River at Red Bluff Diversion Dam (California)</title>
+            <url>https://water.weather.gov/images/xml_logo.gif</url>
+            <link>https://water.weather.gov/ahps/</link>
+            <width>80</width>
+            <height>41</height>
+            <description>NOAA - National Weather Service - Advanced Hydrologic Prediction Service</description>
+        </image>
+        <item>
+            <title>Alert - RDBC1 - Sacramento River at Red Bluff Diversion Dam (California)</title>
+            <link>https://water.weather.gov/ahps2/hydrograph.php?wfo=sto&#x26;gage=rdbc1</link>
+            <description>Alert conditions are not currently being met.&#x3C;br /&#x3E;
+&#x3C;br /&#x3E;
+&#x3C;h2&#x3E;Flood Categories&#x3C;/h2&#x3E;
+&#x3C;h4&#x3E;&#x3C;u&#x3E;Primary (ft)&#x3C;/u&#x3E;&#x3C;/h4&#x3E;
+&#x3C;ul&#x3E;&#x3C;li&#x3E;Action  : 252.5 ft&#x3C;/li&#x3E;
+&#x3C;li&#x3E;Minor  : 255.5 ft&#x3C;/li&#x3E;
+&#x3C;li&#x3E;Moderate  : 257.6 ft&#x3C;/li&#x3E;
+&#x3C;li&#x3E;Major  : 261.6 ft&#x3C;/li&#x3E;
+&#x3C;/ul&#x3E;
+&#x3C;h4&#x3E;&#x3C;u&#x3E;Secondary (kcfs)&#x3C;/u&#x3E;&#x3C;/h4&#x3E;
+&#x3C;ul&#x3E;&#x3C;li&#x3E;Action  : Not Set&#x3C;/li&#x3E;
+&#x3C;li&#x3E;Minor  : Not Set&#x3C;/li&#x3E;
+&#x3C;li&#x3E;Moderate  : Not Set&#x3C;/li&#x3E;
+&#x3C;li&#x3E;Major  : Not Set&#x3C;/li&#x3E;
+&#x3C;/ul&#x3E;
+&#x3C;p&#x3E;&#x3C;i&#x3E;The forecast flood categories are the same as the observation flood categories.&#x3C;/i&#x3E;&#x3C;/p&#x3E;
+&#x3C;h2&#x3E;Gauge Data&#x3C;/h2&#x3E;
+&#x3C;h3&#x3E;&#x3C;i&#x3E;Observations&#x3C;/i&#x3E;&#x3C;/h3&#x3E;
+&#x3C;div&#x3E;Latest Observation Category: Normal&#x3C;/div&#x3E;
+&#x3C;div&#x3E;Latest Observation: 240.87 ft&#x3C;/div&#x3E;
+&#x3C;div&#x3E;Latest Observation (Secondary): 6.59 kcfs&#x3C;/div&#x3E;
+&#x3C;div&#x3E;Observation Time: Dec  3, 2019 07:30 PM -0800&#x3C;/div&#x3E;
+
+&#x3C;/br&#x3E;
+&#x3C;h3&#x3E;&#x3C;i&#x3E;Forecasts&#x3C;/i&#x3E;&#x3C;/h3&#x3E;
+&#x3C;p&#x3E;Forecast Issued: Dec  3, 2019 01:54 PM -0800&#x3C;/p&#x3E;
+&#x3C;h4&#x3E;&#x3C;u&#x3E;Recent&#x3C;/u&#x3E;&#x3C;/h4&#x3E;
+&#x3C;div&#x3E;Recent Category: Normal&#x3C;/div&#x3E;
+&#x3C;div&#x3E;Recent Projected Forecast Available: 240.9 ft&#x3C;/div&#x3E;
+&#x3C;div&#x3E;Recent Projected Forecast Available (Secondary): 6.71 kcfs&#x3C;/div&#x3E;
+&#x3C;div&#x3E;Recent Projected Forecast Time: Dec  3, 2019 09:00 PM -0800&#x3C;/div&#x3E;
+
+&#x3C;/br&#x3E;
+&#x3C;h4&#x3E;&#x3C;u&#x3E;Highest&#x3C;/u&#x3E;&#x3C;/h4&#x3E;
+&#x3C;div&#x3E;Highest Category: Normal&#x3C;/div&#x3E;
+&#x3C;div&#x3E;Highest Projected Forecast Available: 243.1 ft&#x3C;/div&#x3E;
+&#x3C;div&#x3E;Highest Projected Forecast Available (Secondary): 15 kcfs&#x3C;/div&#x3E;
+&#x3C;div&#x3E;Highest Projected Forecast Time: Dec  7, 2019 10:00 AM -0800&#x3C;/div&#x3E;
+
+&#x3C;/br&#x3E;
+&#x3C;h4&#x3E;&#x3C;u&#x3E;Last&#x3C;/u&#x3E;&#x3C;/h4&#x3E;
+&#x3C;div&#x3E;Last Category: Normal&#x3C;/div&#x3E;
+&#x3C;div&#x3E;Last Projected Forecast Available: 242.8 ft&#x3C;/div&#x3E;
+&#x3C;div&#x3E;Last Projected Forecast Available (Secondary): 13.9 kcfs&#x3C;/div&#x3E;
+&#x3C;div&#x3E;Last Projected Forecast Time: Dec  8, 2019 04:00 AM -0800&#x3C;/div&#x3E;
+
+&#x3C;/br&#x3E;
+
+&#x3C;/br&#x3E;
+            </description>
+            <guid isPermaLink="false">https://water.weather.gov/ahps2/hydrograph.php?wfo=sto&#x26;gage=rdbc1&#x26;guid=2019-12-04 03:30:00</guid>
+            <pubDate>Wed, 04 Dec 2019 04:42:52 +0000</pubDate>
+            <geo:lat>40.154444</geo:lat>
+            <geo:long>-122.201944</geo:long>
+        </item>
+    </channel>
+</rss>
