@@ -3,7 +3,7 @@ Description=noaaalerts
 After=multi-user.target
 
 [Service]
-ExecStart=/Users/claytongraham/data/github/claytantor/noaa-alerts-python/venv/bin/python -u /Users/claytongraham/data/github/claytantor/noaa-alerts-python/app.py --config /Users/claytongraham/data/github/claytantor/noaa-alerts-python/config.yml
+ExecStart=/home/pi/data/github.com/claytantor/noaa-alerts-python/venv/bin/python -u /home/pi/data/github.com/claytantor/noaa-alerts-python/app.py --config /home/pi/data/github.com/claytantor/noaa-alerts-python/config.yml
 StandardOutput=syslog
 StandardError=syslog
 SyslogIdentifier=noaaalerts
