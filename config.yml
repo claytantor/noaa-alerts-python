@@ -2,9 +2,11 @@ noaa-alerts:
   sources:
     - guage-id: 'vwbc1'
       name: 'VWBC1 - Sacramento River at Vina-Woodson Bridge (California)'
-      source-type: url
-      rss-type: alert
+      source-type: rss
       path: 'https://water.weather.gov/ahps2/rss/alert/vwbc1.rss'
+      schedule:
+        rate: 'minutes'
+        value: 2
       trigger:
           match: 'Highest Projected Forecast Available'
           minor: 180.0

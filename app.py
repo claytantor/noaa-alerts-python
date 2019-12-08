@@ -6,6 +6,8 @@ import feedparser
 import requests
 import json
 import re
+import schedule
+import time
 
 from lxml import html
 from os.path import dirname, abspath
@@ -95,14 +97,9 @@ def notifySource(source, lines):
         if(makeNotifier != None):
             notifier.notify()
         
-
-def parseSource(source, config):
-    
+def parseSource(source):
     d = None
-    if(source['source-type'] == 'file'):
-        d = feedparser.parse(source['path'])
-
-    if(source['source-type'] == 'url'):
+    if(source['source-type'] == 'rss'):
         d = feedparser.parse(source['path'])    
     
     if(d != None):
@@ -111,14 +108,8 @@ def parseSource(source, config):
             if linesIsTriggered(source, forecastLines):
                 notifySource(source, forecastLines)
 
-                #print(forecastLines)
-
 def main(argv):
-    print("starting app.")
-
-    # get the default paths for both keys and data
-    dir_path = os.path.dirname(os.path.realpath(__file__))
-    parent_dir = dirname(dirname(abspath(__file__)))
+    print("starting noaa-alerts app.")
 
     # Read in command-line parameters
     parser = argparse.ArgumentParser()
@@ -130,10 +121,18 @@ def main(argv):
     config = loadConfig(args.config)['noaa-alerts']
 
     for source in config['sources']:
-        parseSource(source, config)
+        
+        if(source['schedule']['rate'] == 'day'):
+            schedule.every().day.at(source['schedule']['value']).do(parseSource, source=source )
+        if(source['schedule']['rate'] == 'hours'):
+            schedule.every(source['schedule']['value']).hours.do(parseSource, source=source )
+        if(source['schedule']['rate'] == 'minutes'):
+            print(source['schedule'])
+            schedule.every(source['schedule']['value']).minutes.do(parseSource, source=source )
 
-
-    
+    while True:
+        schedule.run_pending()
+        time.sleep(1)
 
 if __name__ == "__main__":
     main(sys.argv[1:])

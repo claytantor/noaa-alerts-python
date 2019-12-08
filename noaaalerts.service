@@ -1,0 +1,14 @@
+[Unit]
+Description=noaaalerts
+After=multi-user.target
+
+[Service]
+ExecStart=/Users/claytongraham/data/github/claytantor/noaa-alerts-python/venv/bin/python -u /Users/claytongraham/data/github/claytantor/noaa-alerts-python/app.py --config /Users/claytongraham/data/github/claytantor/noaa-alerts-python/config.yml
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=noaaalerts
+Restart=always
+User=root
+
+[Install]
+WantedBy=multi-user.target
