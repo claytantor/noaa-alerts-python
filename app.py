@@ -31,10 +31,7 @@ class SlackWebhookNotification:
         """
         # curl -X POST -H 'Content-type: application/json' --data '{"text":"Hello, World!"}' https://hooks.slack.com/services/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
         """
-
         self.notification['content'].extend(self.lines)
-        #notityLines = self.notification['content'].extend(self.lines) 
-        #print('\n'.join(self.notification['content']))
         
         response = requests.post(self.notification['path'], data=json.dumps({'mrkdwn': True, 'text':'\n'.join(self.notification['content'])}), headers={'Content-type':'application/json'})
         print('NOTIFY SlackWebhook!', self.notification['path'], response)
@@ -54,7 +51,6 @@ class FlashLexNotification:
     def notify(self):
         pass
 
-
 def loadConfig(configFile):
     cfg = None
     with open(configFile, 'r') as ymlfile:
@@ -72,7 +68,6 @@ def linesIsTriggered(source, lines):
     for line in lines:
         x = re.search("^{0}".format(source['trigger']['match']), line)
         if(x):
-            #print(line, x)
             parts = line.split()
             
             if(len(parts)==6):
@@ -121,13 +116,12 @@ def main(argv):
     config = loadConfig(args.config)['noaa-alerts']
 
     for source in config['sources']:
-        
+        print(source['schedule']) 
         if(source['schedule']['rate'] == 'day'):
             schedule.every().day.at(source['schedule']['value']).do(parseSource, source=source )
         if(source['schedule']['rate'] == 'hours'):
             schedule.every(source['schedule']['value']).hours.do(parseSource, source=source )
         if(source['schedule']['rate'] == 'minutes'):
-            print(source['schedule'])
             schedule.every(source['schedule']['value']).minutes.do(parseSource, source=source )
 
     while True:
