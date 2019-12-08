@@ -1,5 +1,5 @@
-# redbluff-dam-alerts
-send dam diversion alerts to the slack channel
+# noaa-alerts-python
+send noaa hydrometer alerts to the slack channel
 
 ## installing stuff
 ```
