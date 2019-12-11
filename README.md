@@ -9,6 +9,8 @@ $(pwd)/venv/bin/python3 -m pip install --upgrade pip
 $(pwd)/venv/bin/python3 -m pip install -r requirements.txt
 ```
 
+# running from command line
+`$(pwd)/venv/bin/python -u $(pwd)/app.py --config $(pwd)/config.yml`
 
 # creating the systemd service
 ```
