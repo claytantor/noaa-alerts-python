@@ -61,10 +61,11 @@ class FlashLexNotification:
             url = '{0}/v1/things/{1}/publish'.format(self.notification['baseUrl'], self.notification['thingId'])
 
             messageModel = {
-                "body": "{notificationName}|{actual}|f".format(notificationName=self.notification['name'], actual=self.isTriggeredResponse['actual']), 
+                "body": "{notificationName}|{actual}".format(notificationName=self.notification['name'], actual=self.isTriggeredResponse['actual']), 
                 "color": "#42f584", 
-                "type": "weather", 
-                "behavior": "current", 
+                "type": "metric", 
+                "behavior": "number", 
+                "font": "md-1",
                 "elapsed": 20.0 }
 
             headers = {
