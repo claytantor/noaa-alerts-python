@@ -65,7 +65,7 @@ class FlashLexNotification:
                 "color": "#42f584", 
                 "type": "metric", 
                 "behavior": "number", 
-                "font": "md-1",
+                "font": "sm-1",
                 "elapsed": 20.0 }
 
             headers = {
