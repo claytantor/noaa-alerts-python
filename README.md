@@ -1,5 +1,5 @@
 # noaa-alerts-python
-send noaa hydrometer alerts to the slack channel
+send noaa hydrometer alerts to the slack channel.
 
 ## installing stuff
 ```
