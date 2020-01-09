@@ -13,11 +13,11 @@ noaa-alerts:
           moderate: 189.5
           major: 190.0
       notifications:
-        # curl -X POST -H 'Content-type: application/json' --data '{"text":"Hello, World!"}' https://hooks.slack.com/services/TDAR4A9G/BRPKRLD9R/fFgHkOxaBnpHSBye56YsSL4L
+        # curl -X POST -H 'Content-type: application/json' --data '{"text":"Hello, World!"}' https://hooks.slack.com/services/TDAR6YHA/ARPLKLD9R/fFgHkOSooperSecretSBye56YsSL4L
         - name: 'VWBC1 - Sacramento River at Vina-Woodson Bridge'
           type: 'SlackWebhook'
           content:
             - '*VWBC1 - Sacramento River at Vina-Woodson Bridge Above Threshold 180 ft*'
             - 'https://water.weather.gov/ahps2/hydrograph.php?gage=vwbc1&wfo=sto'
-          path: 'https://hooks.slack.com/services/TDAR4A9G/BRPKRLD9R/fFgHkOxaBnpHSBye56YsSL4L'
+          path: 'https://hooks.slack.com/services/TDAR6YHA/ARPLKLD9R/fFgHkOSooperSecretSBye56YsSL4L'
   

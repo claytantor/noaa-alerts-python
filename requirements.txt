@@ -4,3 +4,4 @@ feedparser==5.2.1
 lxml==4.4.2
 schedule==0.6.0
 pystache==0.5.4
+flashlexiot==0.9.3
