@@ -20,4 +20,22 @@ noaa-alerts:
             - '*VWBC1 - Sacramento River at Vina-Woodson Bridge Above Threshold 180 ft*'
             - 'https://water.weather.gov/ahps2/hydrograph.php?gage=vwbc1&wfo=sto'
           path: 'https://hooks.slack.com/services/TDAR6YHA/ARPLKLD9R/fFgHkOSooperSecretSBye56YsSL4L'
-  
+    - guage-id: 'syco3'
+      name: 'SYCO3 - Johnson Creek near Sycamore (Oregon) - FlashLex'
+      source-type: rss
+      path: 'https://water.weather.gov/ahps2/rss/alert/syco3.rss'
+      schedule:
+        rate: 'minutes'
+        value: 8
+      trigger:
+          match: 'Highest Projected Forecast Available'
+          minor: 5.0 
+          moderate: 10.3 
+          major: 10.3 
+      notifications:
+        - name: 'SYCO3 Johnson Creek at Sycamore'
+          type: 'FlashLex'
+          baseUrl: 'https://api.flashlex.com/dev'
+          thingId: '48338542-9866-1046-9ecc-ad74e1807cc5'
+          headers:
+            Authorization: "Basic SooperSecr3t"
