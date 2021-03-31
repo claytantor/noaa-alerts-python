@@ -1,7 +1,7 @@
 PyYAML>=5.1
 requests>=2.20.0
 feedparser==5.2.1
-lxml==4.4.2
+lxml==4.6.3
 schedule==0.6.0
 pystache==0.5.4
 flashlexiot==0.9.3
